@@ -17,7 +17,7 @@ foreach MM ( 01 02 03 04 05 06 07 08 09 10 11 12 )
 
 if ( ! -e ASOS1MIN_${STN}${YY}${MM}.dat.gz ) then
 
-wget https://www.ncei.noaa.gov/pub/data/asos-onemin/6405-2013/64050${STN}${YY}${MM}.dat
+wget https://www.ncei.noaa.gov/pub/data/asos-onemin/6405-${YY}/64050${STN}${YY}${MM}.dat
 mv 64050${STN}${YY}${MM}.dat ASOS1MIN_${STN}${YY}${MM}.dat
 gzip ASOS1MIN_${STN}${YY}${MM}.dat
 
